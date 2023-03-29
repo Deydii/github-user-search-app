@@ -2,14 +2,7 @@
 </script>
 
 <template>
-  <header>
-
-    <div>
-    </div>
-  </header>
-
-  <main>
-  </main>
+  <div></div>
 </template>
 
 <style scoped>
