@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between	items-center w-full mt-36 mb-9">
+  <header class="flex justify-between	items-center w-full mt-32 mb-9">
     <h1 class="text-xl text-cyan-blue-950 dark:text-white">devfinder</h1>
     <div class="flex space-x-4 group text-gray-500 hover:text-cyan-blue-950">
       <p class="text-xs">DARK</p>
