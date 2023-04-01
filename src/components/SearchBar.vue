@@ -1,7 +1,5 @@
 <script setup>
-  import { ref } from 'vue';
-
-  const inputValue = ref("");
+  import { store } from '../store/store';
 </script>
 
 <template>
@@ -12,10 +10,11 @@
     <input
       class="w-9/12 text-[18px] text-cyan-blue-950 ml-6 placeholder:text-[18px] placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 dark:text-white dark:placeholder:text-white" 
       placeholder="Search Github username..."
-      v-model="inputValue"
+      v-model="store.inputValue"
     />
     <button
       type="button"
+      @click="store.loadData(store.inputValue)"
       class="bg-cyan-blue-500 w-[106px] h-[50px] ml-6 rounded-[10px] text-base text-white font-bold hover:opacity-70"
     >
       Search
