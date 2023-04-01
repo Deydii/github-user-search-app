@@ -28,7 +28,6 @@
         repos: data.public_repos,
         followers: data.followers,
         following: data.following,
-        type: data.type,
         location: data.location,
         twitter: data.twitter_username,
         blog: data.blog,
@@ -56,7 +55,7 @@
       :alt="`${result.name} avatar`"
     />
     <div class="relative ml-40">
-      <h1 class="text-cyan-blue-950 text-xl dark:text-white">{{ result.name }}</h1>
+      <h1 class="text-cyan-blue-950 text-xl capitalize dark:text-white">{{ result.name ? result.name : result.login }}</h1>
       <p class="absolute top-2 right-0 text-cyan-blue-800 text-sm dark:text-white">Joined {{ result.created_at }}</p>
       <p class="text-base text-cyan-blue-500">@{{ result.login }}</p>
       <p 
