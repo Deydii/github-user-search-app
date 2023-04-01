@@ -8,6 +8,7 @@ export const store = reactive({
   isError: false,
   async loadData (user) {
     store.loading = true;
+    store.isError =  false;
     await axios.get(`https://api.github.com/users/${user}`, {
      headers: {
        Authorization: `Bearer ${import.meta.env.VITE_TOKEN_API}`

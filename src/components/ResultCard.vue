@@ -12,7 +12,7 @@
 
 <template>
   <div v-if="store.loading">Loading...</div>
-  <main v-else class="w-full h-[444px] mt-6 p-12 rounded-2xl bg-white">
+  <main v-if="!store.loading && store.result" class="w-full h-[444px] mt-6 p-12 rounded-2xl bg-white">
     <img 
       class="float-left w-[117px] h-[117px] rounded-full"
       :src="store.result.avatar"
