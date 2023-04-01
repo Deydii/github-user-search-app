@@ -48,7 +48,8 @@
 </script>
 
 <template>
-  <main class="w-full h-[444px] mt-6 p-12 rounded-2xl bg-white">
+  <div v-if="loading">Loading...</div>
+  <main v-else class="w-full h-[444px] mt-6 p-12 rounded-2xl bg-white">
     <img 
       class="float-left w-[117px] h-[117px] rounded-full"
       :src="result.avatar"
@@ -70,8 +71,17 @@
       >
         This profile has no bio
       </p>
-      <SummaryCard />
-      <LinksCard />
+      <SummaryCard 
+        :repos="result.repos"
+        :followers="result.followers"
+        :following="result.following"
+      />
+      <LinksCard 
+        :location="result.location"
+        :twitter="result.twitter"
+        :blog="result.blog"
+        :company="result.company"
+      />
     </div>
   </main>
 </template>
