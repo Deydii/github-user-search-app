@@ -4,7 +4,7 @@
 
 <template>
   <form 
-    class="w-full h-[69px] flex items-center bg-white rounded-2xl dark:bg-blue-900"
+    class="w-full h-[60px] flex items-center bg-white rounded-2xl md:h-[69px] dark:bg-blue-900"
     @submit.prevent="store.loadData(store.inputValue)"
   >
     <svg class="ml-2 h-5 w-[20.5px] min-[375px]:ml-4 md:ml-8 md:h-6 md:w-[25px]" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +15,6 @@
         class=" w-full cursor-pointer	placeholder:text-[12px] text-cyan-blue-950 placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 min-[425px]:placeholder:text-xs min-[425px]:text-xs md:text-base md:placeholder:text-base lg:text-[18px] lg:placeholder:text-[18px] dark:text-white dark:placeholder:text-white dark:bg-blue-900" 
         placeholder="Search Github username..."
         v-model="store.inputValue"
-        required
       />
       <p class="absolute top-5 text-red-500 text-xs  font-bold max-[767px]:left-0 md:top-0 md:right-0 md:text-sm lg:top-1">{{ store.isError ? "No results" : "" }}</p>
     </div>
