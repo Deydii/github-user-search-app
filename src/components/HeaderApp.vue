@@ -28,7 +28,7 @@
 </script>
 
 <template>
-  <header class="flex justify-between	items-center w-full mt-8 md:mt-32 mb-9">
+  <header class="flex justify-between	items-center w-full mt-8 mb-9 md:mt-32">
     <h1 class="text-xl text-cyan-blue-950 dark:text-white">devfinder</h1>
     <div class="flex space-x-4 group text-gray-500 hover:text-cyan-blue-950 dark:text-white">
       <p class="text-xs font-bold">{{ theme === "dark" ? "LIGHT" : "DARK"}}</p>

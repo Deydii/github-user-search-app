@@ -12,28 +12,28 @@
 
 <template>
   <div class="text-cyan-blue-950 text-lg dark:text-white" v-if="store.loading">Loading...</div>
-  <main v-if="!store.loading && store.result" class="w-full h-[517px] md:h-[481px] lg:h-[444px] mt-6 p-4 min-[375px]:px-5 min-[425px]:px-6 md:px-10 lg:px-12 rounded-2xl bg-white dark:bg-blue-900">
+  <main v-if="!store.loading && store.result" class="w-full h-[517px] mt-6 p-4 rounded-2xl bg-white min-[375px]:px-5 min-[425px]:px-6 md:h-[481px] md:px-10 lg:h-[444px] lg:px-12 dark:bg-blue-900">
     <div class="mt-8 md:mt-10 lg:mt-12">
       <img 
-        class="float-left w-[70px] h-[70px] md:w-[117px] md:h-[117px] rounded-full"
+        class="float-left w-[70px] h-[70px] rounded-full md:w-[117px] md:h-[117px]"
         :src="store.result.avatar"
         :alt="`${store.result.name} avatar`"
       />
     </div>
     <div class="relative mt-8 md:mt-[52px] lg:mt-11 lg:ml-40">
       <div class="ml-24 md:ml-40 lg:ml-0">
-        <h1 class="text-cyan-blue-950 text-base md:text-xl capitalize dark:text-white">{{ store.result.name ? store.result.name : store.result.login }}</h1>
-        <p class="text-xs md:text-base text-cyan-blue-500">@{{ store.result.login }}</p>
-        <p class="lg:absolute top-2 right-0 text-cyan-blue-800 text-xs md:text-sm dark:text-white">Joined {{ store.result.created_at }}</p>
+        <h1 class="text-cyan-blue-950 text-base capitalize md:text-xl dark:text-white">{{ store.result.name ? store.result.name : store.result.login }}</h1>
+        <p class="text-xs  text-cyan-blue-500 md:text-base">@{{ store.result.login }}</p>
+        <p class="top-2 right-0 text-cyan-blue-800 text-xs md:text-sm lg:absolute dark:text-white">Joined {{ store.result.created_at }}</p>
       </div>
       <p 
-        class="mt-8 md:mt-[38px] lg:mt-5 text-cyan-blue-800 text-xs md:text-sm dark:text-white"
+        class="mt-8 text-cyan-blue-800 text-xs md:text-sm md:mt-[38px] lg:mt-5 dark:text-white"
         v-if="store.result.bio"
       >
         {{ store.result.bio }}
       </p>
       <p 
-        class="mt-8 md:mt-[38px] lg:mt-5 text-cyan-blue-800 text-xs md:text-sm dark:text-white"
+        class="mt-8 text-cyan-blue-800 text-xs md:text-sm md:mt-[38px] lg:mt-5 dark:text-white"
         v-else
       >
         This profile has no bio
