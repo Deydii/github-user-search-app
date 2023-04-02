@@ -10,14 +10,14 @@
     <svg class="ml-8" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
       <path d="M10.609 0c5.85 0 10.608 4.746 10.608 10.58 0 2.609-.952 5-2.527 6.847l5.112 5.087a.87.87 0 01-1.227 1.233l-5.118-5.093a10.58 10.58 0 01-6.848 2.505C4.759 21.16 0 16.413 0 10.58 0 4.747 4.76 0 10.609 0zm0 1.74c-4.891 0-8.87 3.965-8.87 8.84 0 4.874 3.979 8.84 8.87 8.84a8.855 8.855 0 006.213-2.537l.04-.047a.881.881 0 01.058-.053 8.786 8.786 0 002.558-6.203c0-4.875-3.979-8.84-8.87-8.84z" fill="#0079ff"/>
     </svg>
-    <div class="relative w-9/12 ml-6">
+    <div class="relative md:w-[60%] lg:w-9/12 ml-6">
       <input
-        class=" w-full cursor-pointer	text-[18px] text-cyan-blue-950 placeholder:text-[18px] placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 dark:text-white dark:placeholder:text-white dark:bg-blue-900" 
+        class=" w-full cursor-pointer	md:text-base lg:text-[18px] text-cyan-blue-950 md:placeholder:text-base lg:placeholder:text-[18px] placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 dark:text-white dark:placeholder:text-white dark:bg-blue-900" 
         placeholder="Search Github username..."
         v-model="store.inputValue"
         required
       />
-      <p class="absolute top-1 right-0 text-red-500 text-sm font-bold">{{ store.isError ? "No results" : "" }}</p>
+      <p class="absolute md:top-0 top-1 right-0 text-red-500 text-sm font-bold">{{ store.isError ? "No results" : "" }}</p>
     </div>
     <button
       type="submit"

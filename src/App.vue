@@ -5,7 +5,7 @@
 </script> 
 
 <template>
-  <div class="h-screen flex flex-col px-[355px] items-center bg-blue-100 dark:bg-cyan-blue-950">
+  <div class="flex flex-col md:min-h-screen md:px-[98px] md:pb-56 lg:px-[355px] lg:pb-0 lg:h-screen items-center bg-blue-100 dark:bg-cyan-blue-950">
     <HeaderApp />
     <SearchBar />
     <ResultCard />
