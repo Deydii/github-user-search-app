@@ -11,7 +11,12 @@
 </script>
 
 <template>
-  <div class="text-cyan-blue-950 text-lg dark:text-white" v-if="store.loading">Loading...</div>
+  <div class="flex items-center mt-5 text-cyan-blue-800 text-base lg:text-lg dark:text-white" v-if="store.loading">
+    <svg class="animate-spin mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path class="fill-cyan-blue-800 dark:fill-white" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Loading...
+ </div>
   <main v-if="!store.loading && store.result" class="w-full min-h-[517px] mt-6 px-4 pb-10 rounded-2xl bg-white min-[375px]:px-5 min-[425px]:px-6 md:min-h-[481px] md:px-10 lg:min-h-[444px] lg:px-12 lg:pb-12 dark:bg-blue-900">
     <div class="mt-8 md:mt-10 lg:mt-12">
       <img 
