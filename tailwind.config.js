@@ -48,7 +48,11 @@ module.exports = {
         fontWeight: '700'
       }],
     },
-    extend: {},
+    extend: {
+      screens: {
+        'sm': '375px',
+    },
+    },
   },
   plugins: [],
 }
