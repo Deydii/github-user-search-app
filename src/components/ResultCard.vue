@@ -12,7 +12,7 @@
 
 <template>
   <div class="text-cyan-blue-950 text-lg dark:text-white" v-if="store.loading">Loading...</div>
-  <main v-if="!store.loading && store.result" class="w-full h-[517px] mt-6 p-4 rounded-2xl bg-white min-[375px]:px-5 min-[425px]:px-6 md:h-[481px] md:px-10 lg:h-[444px] lg:px-12 dark:bg-blue-900">
+  <main v-if="!store.loading && store.result" class="w-full min-h-[517px] mt-6 px-4 pb-10 rounded-2xl bg-white min-[375px]:px-5 min-[425px]:px-6 md:min-h-[481px] md:px-10 lg:min-h-[444px] lg:px-12 lg:pb-12 dark:bg-blue-900">
     <div class="mt-8 md:mt-10 lg:mt-12">
       <img 
         class="float-left w-[70px] h-[70px] rounded-full md:w-[117px] md:h-[117px]"
