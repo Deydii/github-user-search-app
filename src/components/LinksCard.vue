@@ -58,7 +58,7 @@
         </g>
       </svg>
       <a 
-        class="ml-4 text-cyan-blue-800 text-sm dark:tewt-white hover:underline"
+        class="ml-4 text-cyan-blue-800 text-sm dark:text-white hover:underline"
         :class="{'opacity-50 dark:opacity-50 hover:no-underline pointer-events-none' : !company}" 
         :href="`https://github.com/${nameCompany}`" 
         target="_blank"

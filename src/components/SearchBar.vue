@@ -4,7 +4,7 @@
 
 <template>
   <form 
-    class="w-full h-[69px] flex items-center bg-white rounded-2xl dark:bg-cyan-blue-900"
+    class="w-full h-[69px] flex items-center bg-white rounded-2xl dark:bg-blue-900"
     @submit.prevent="store.loadData(store.inputValue)"
   >
     <svg class="ml-8" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
     </svg>
     <div class="relative w-9/12 ml-6">
       <input
-        class=" w-full cursor-pointer	text-[18px] text-cyan-blue-950 placeholder:text-[18px] placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 dark:text-white dark:placeholder:text-white" 
+        class=" w-full cursor-pointer	text-[18px] text-cyan-blue-950 placeholder:text-[18px] placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 dark:text-white dark:placeholder:text-white dark:bg-blue-900" 
         placeholder="Search Github username..."
         v-model="store.inputValue"
         required
