@@ -12,11 +12,12 @@
     </svg>
     <div class="relative ml-2 sm:w-[60%] md:ml-6 lg:w-9/12">
       <input
+        type="text"
         class=" w-full cursor-pointer	placeholder:text-[12px] text-cyan-blue-950 placeholder:text-cyan-blue-800 focus:outline-none caret-cyan-blue-500 min-[425px]:placeholder:text-xs min-[425px]:text-xs md:text-base md:placeholder:text-base lg:text-[18px] lg:placeholder:text-[18px] dark:text-white dark:placeholder:text-white dark:bg-blue-900" 
         placeholder="Search Github username..."
         v-model="store.inputValue"
       />
-      <p class="absolute top-5 text-red-500 text-xs  font-bold max-[767px]:left-0 md:top-0 md:right-0 md:text-sm lg:top-1">{{ store.isError ? "No results" : "" }}</p>
+      <p class="absolute top-5 text-red-500 text-xs font-bold max-[767px]:left-0 md:top-0 md:right-0 md:text-sm lg:top-1">{{ store.isError ? "No results" : "" }}</p>
     </div>
     <button
       type="submit"
