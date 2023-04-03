@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
   import HeaderApp from './components/HeaderApp.vue';
   import SearchBar from './components/SearchBar.vue';
   import ResultCard from './components/ResultCard.vue';

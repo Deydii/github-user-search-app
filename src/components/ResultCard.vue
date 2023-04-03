@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
   import { onMounted } from 'vue';
   import { store } from '../store/store';
   import SummaryCard from './SummaryCard.vue';

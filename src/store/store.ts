@@ -6,7 +6,7 @@ export const store = reactive({
   loading: false,
   result: [],
   isError: false,
-  async loadData (user) {
+  async loadData (user: string) {
     if (!user) {
       store.isError =  true;
     } else {
