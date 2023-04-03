@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue';
 
-  const theme = ref(localStorage.getItem("theme"));
+  const theme = ref<string | null>(localStorage.getItem("theme"));
 
   onMounted(() => {
     if (theme.value === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

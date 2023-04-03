@@ -1,10 +1,31 @@
 import { reactive } from 'vue';
 import axios from 'axios';
 
-export const store = reactive({
+interface Store {
+  inputValue: string,
+  loading: boolean,
+  result?: {
+    avatar: string,
+    name?: string,
+    login: string,
+    created_at: string,
+    bio?: string,
+    repos: number,
+    followers: number,
+    following: number,
+    location?: string,
+    twitter?: string,
+    blog?: string,
+    company?: string
+  },
+  isError: boolean,
+  loadData: (user: string) => void
+}
+
+export const store: Store = reactive({
   inputValue: "",
   loading: false,
-  result: [],
+  result: undefined,
   isError: false,
   async loadData (user: string) {
     if (!user) {

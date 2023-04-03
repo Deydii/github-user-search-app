@@ -1,8 +1,8 @@
 <script setup lang="ts">
   defineProps({
-    repos: Number,
-    followers: Number,
-    following: Number
+    repos: { type: Number, required: true },
+    followers: { type: Number, required: true },
+    following: { type: Number, required: true }
   });
 </script>
 

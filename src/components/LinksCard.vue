@@ -3,13 +3,13 @@
   import { ref } from 'vue';
 
   const props = defineProps({
-    location: String,
-    twitter: String,
-    blog: String,
-    company: String
+    location:{ type: String, required: false},
+    twitter: { type: String, required: false},
+    blog: { type: String, required: false},
+    company: { type: String, required: false}
   });
 
-  const nameCompany = ref(props.company);
+  const nameCompany = ref<string | undefined>(props.company);
 
   nameCompany.value = nameCompany?.value?.slice(1);
 
