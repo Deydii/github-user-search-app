@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <form 
+  <form
+    name="form"
     class="w-full h-[60px] flex items-center bg-white rounded-2xl md:h-[69px] dark:bg-blue-900"
     @submit.prevent="store.loadData(store.inputValue)"
   >

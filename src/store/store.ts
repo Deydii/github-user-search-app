@@ -33,11 +33,7 @@ export const store: Store = reactive({
     } else {
       store.loading = true;
       store.isError =  false;
-      await axios.get(`https://api.github.com/users/${user}`, {
-      headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_TOKEN_API}`
-      }
-      })
+      await axios.get(`https://api.github.com/users/${user}`)
       .then(({ data }) => {
         const date = new Date(data.created_at).toString().split(" ");
         const newDateFormat = [date[2], date[1], date[3]];

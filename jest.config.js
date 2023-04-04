@@ -10,5 +10,7 @@ module.exports =  () => {
     testEnvironmentOptions: {
       customExportConditions: ["node", "node-addons"],
    },
+   setupFiles: ['<rootDir>/src/components/__tests__/matchMedia.js'],
+   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
   }
 } 
