@@ -45,13 +45,14 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://deydi-github-user-search-app.vercel.app/
 
 ## My process
 
 ### Built with
 
 - Vue.js
+- Vite
 - TypeScript
 - Tailwind CSS
 
