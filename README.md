@@ -1,41 +1,62 @@
-# github-user-search-app
+# Frontend Mentor - GitHub user search app solution
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Recommended IDE Setup
+## Table of contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Installing](#installing)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Tests](#tests)
 
-## Customize configuration
+## Installing
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```bash
+# Clone this repository
+$ git clone https://github.com/Deydii/github-user-search-app.git
 
-## Project Setup
+# Installing all the dependencies
+$ yarn
 
-```sh
-npm install
+# Run the app
+$ yarn dev
 ```
 
-### Compile and Hot-Reload for Development
+## Overview
 
-```sh
-npm run dev
-```
+### The challenge
 
-### Compile and Minify for Production
+Users should be able to:
 
-```sh
-npm run build
-```
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Search for GitHub users by their username
+- See relevant user information based on their search
+- Switch between light and dark themes
+- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Screenshot
 
-```sh
-npm run test:unit
-```
+![](./screenshot.png)
 
-### Lint with [ESLint](https://eslint.org/)
+### Links
 
-```sh
-npm run lint
-```
+- Live Site URL: 
+
+## My process
+
+### Built with
+
+- Vue.js
+- TypeScript
+- Tailwind CSS
+
+### Tests
+
+- Jest
+- Vue Testing Library
+- Mock Service Worker (MSW)
