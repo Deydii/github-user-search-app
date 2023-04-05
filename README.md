@@ -53,6 +53,7 @@ Users should be able to:
 
 - Vue.js
 - TypeScript
+- Axios
 - Tailwind CSS
 
 ### Tests
