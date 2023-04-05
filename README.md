@@ -54,6 +54,7 @@ Users should be able to:
 - Vue.js
 - Vite
 - TypeScript
+- Axios
 - Tailwind CSS
 
 ### Tests
